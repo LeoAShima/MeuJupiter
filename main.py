@@ -71,4 +71,4 @@ def getHistorico():
 def getAcompCred():
     print("Obtendo total de créditos")
     os.system("wget --save-cookies cookies.txt --keep-session-cookies --post-data 'codpes="+os.environ.get('CODPES')+"&senusu="+os.environ.get('SENUSU')+"&Submit+Entrar+&url=' --delete-after https://uspdigital.usp.br/jupiterweb/autenticar")
-    os.system("wget --load-cookies cookies.txt -O acompCred.png 'https://uspdigital.usp.br/jupiterweb/GraphicControle?tipografico=barGrupoDesempenho&codpgm=1&sequencia=0'")
+    os.system("wget --load-cookies cookies.txt -O acompCred.png 'https://uspdigital.usp.br/jupiterweb/GraphicControle?tipografico=barGrupoDesempenho&codpgm=1&sequencia=2'")
